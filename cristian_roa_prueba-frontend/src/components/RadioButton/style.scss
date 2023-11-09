@@ -1,16 +1,15 @@
 @import "@/scss/globals.scss";
 
-.CheckBox {
+.RadioButton {
    appearance: none;
    -webkit-appearance: none;
    -moz-appearance: none;
    user-select: none;
 
    position: relative;
-   margin-bottom: 20px;
+   padding-left: 80px;
    display: block;
-
-   padding-left: 32px;
+   margin-bottom: 30px;
 
    & input {
       visibility: hidden;
@@ -24,20 +23,12 @@
 
    & i {
       position: absolute;
-      left: 0;
       top: 0;
-      width: 22px;
-      height: 22px;
+      left: 0;
+      height: 21px;
+      width: 21px;
       background-color: $letter;
-      border-radius: 5px;
-      border: 1px solid $letter;
-
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
+      border-radius: 50%;
+      border: 2px solid $letter;
    }
-
-
 }

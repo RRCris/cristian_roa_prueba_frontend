@@ -3,6 +3,7 @@ import Button from "@/components/Button";
 import ButtonNav, { MS } from "@/components/ButtonNav";
 import Typografy from "@/components/Typografy";
 import CheckBox from "@/components/CheckBox";
+import RadioButton from "@/components/RadioButton";
 const data: MS = [
   {
     onClick: () => {
@@ -66,7 +67,17 @@ function App() {
         <Typografy variant="CardTitle" color="#000">
           Hola
         </Typografy>
-        <CheckBox name="autopista" label="Autopista" />
+        <CheckBox
+          name="autopista"
+          label="Autopista"
+          onChange={(e) => console.log(e.target.checked)}
+        />
+        <div onChange={(e) => console.log(e.target.value)}>
+          <RadioButton label="Python" name="lenguaje" value="python" />
+          <RadioButton label="Java" name="lenguaje" value="java" />
+          <RadioButton label="JavaScript" name="lenguaje" value="javaScript" />
+          <RadioButton label="C++" name="lenguaje" value="c++" />
+        </div>
       </div>
     </>
   );
