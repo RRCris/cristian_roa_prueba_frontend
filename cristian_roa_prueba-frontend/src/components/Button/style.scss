@@ -11,13 +11,13 @@
 
 
    cursor: pointer;
-   border: 1px solid transparent;
+   border: 2px solid transparent;
    will-change: filter;
-   transition: filter 300ms;
+   transition: border-color 0.5s;
    transition: color 0.25s;
 
    &:hover {
-      filter: drop-shadow(0 0 10px #FFF3);
+      border-color: #09c;
    }
 
    &:focus,

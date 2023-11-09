@@ -2,16 +2,42 @@ import { useState } from "react";
 import "@/App.scss";
 import Button from "@/components/Button";
 import ButtonNav, { MS } from "@/components/ButtonNav";
+import Typografy from "./components/Typografy";
 const data: MS = [
-  { onClick: () => {}, title: "Page1" },
-  { onClick: () => {}, title: "Page2" },
+  {
+    onClick: () => {
+      console.log("Page 1");
+    },
+    title: "Page 1",
+  },
+  {
+    onClick: () => {
+      console.log("Page 2");
+    },
+    title: "Page 2",
+  },
   {
     options: [
-      { title: "item1", onCLick() {} },
-      { title: "item2", onCLick() {} },
-      { title: "item3", onCLick() {} },
+      {
+        title: "item 1",
+        onCLick() {
+          console.log("item 1");
+        },
+      },
+      {
+        title: "item 2",
+        onCLick() {
+          console.log("item 2");
+        },
+      },
+      {
+        title: "item 3",
+        onCLick() {
+          console.log("item 3");
+        },
+      },
     ],
-    title: "Page3",
+    title: "Page 3",
   },
 ];
 function App() {
@@ -19,8 +45,6 @@ function App() {
 
   return (
     <>
-      <div></div>
-      <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -32,14 +56,18 @@ function App() {
           Go there...
         </Button>
         <ButtonNav data={data}>Navigation</ButtonNav>
-
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+        <ButtonNav onClick={() => console.log("Navigation")}>
+          Navigation
+        </ButtonNav>
+        <Typografy variant="TitlePage">hola</Typografy>
+        <Typografy variant="SubtitlePage">hola</Typografy>
+        <Typografy variant="BodyText">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, harum
+          fugit, cumque quibusdam molestias consequatur et veniam iusto eum iure
+          itaque ipsum officia. Labore quas beatae nulla molestias repudiandae.
+          Hic.
+        </Typografy>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   );
 }

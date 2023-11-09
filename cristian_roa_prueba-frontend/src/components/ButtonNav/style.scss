@@ -1,6 +1,12 @@
 @import "@/scss/globals.scss";
 
 .ButtonNav {
+   width: fit-content;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
    .but {
       border-radius: 8px;
       padding: 0.6em;
@@ -19,9 +25,93 @@
 
 
       &:hover {
-         filter: drop-shadow(0 0 10px #FFF5);
+         filter: drop-shadow(0 0 15px #FFFF);
       }
 
 
    }
+
+   .MenuSelect {
+      background-color: $secondary;
+      width: fit-content;
+      padding: .5rem .8rem;
+      border-radius: 10px;
+      animation: largeIn .5s;
+
+
+      .MenuOption {
+         padding: 0 0rem 0 .3rem;
+         background-color: $secondary;
+         border-bottom: 1px solid $letter;
+         border-radius: 2px;
+         cursor: pointer;
+
+         .contentHead {
+            display: flex;
+            align-items: start;
+            gap: 2rem;
+         }
+
+         &:hover {
+            filter: brightness(1.2)
+         }
+
+         .openItems {
+            animation: largeIn .3s;
+         }
+
+         .openDrop {
+            transform: rotate(90deg);
+            animation: rotate .3s;
+         }
+
+
+
+
+         .MenuItem {
+            border-bottom: 1px solid $letter;
+            width: 80%;
+            margin-left: auto;
+            text-align: left;
+            transition: background-color .3s;
+
+            &:hover {
+               background-color: $main;
+            }
+         }
+
+      }
+   }
+
+
+
+
+}
+
+@keyframes largeIn {
+   0% {
+      height: 0;
+      opacity: 0;
+   }
+
+   80% {
+      height: 100px;
+      opacity: 0.8;
+   }
+
+   100% {
+      height: fit-content;
+      opacity: 1;
+   }
+}
+
+@keyframes rotate {
+   from {
+      transform: rotate(0deg);
+   }
+
+   to {
+      transform: rotate(90deg);
+   }
+
 }
