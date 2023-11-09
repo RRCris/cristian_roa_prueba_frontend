@@ -1,0 +1,27 @@
+@import "@/scss/globals.scss";
+
+.ButtonNav {
+   .but {
+      border-radius: 8px;
+      padding: 0.6em;
+      font-size: 1em;
+      font-weight: 500;
+      font-family: Roboto;
+      background-color: transparent;
+
+
+
+      cursor: pointer;
+      border: 1px solid transparent;
+      will-change: filter;
+      transition: filter 300ms;
+      transition: color 0.25s;
+
+
+      &:hover {
+         filter: drop-shadow(0 0 10px #FFF5);
+      }
+
+
+   }
+}
