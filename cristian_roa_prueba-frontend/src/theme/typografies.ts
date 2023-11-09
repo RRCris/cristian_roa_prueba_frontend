@@ -27,6 +27,12 @@ export const Typografies = {
     font-style: normal;
     font-size: 2.5rem;
   `,
+  BodySubtitle: styled.h5`
+    font-family: Roboto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.1rem;
+  `,
 };
 
 export type Variants = keyof typeof Typografies;

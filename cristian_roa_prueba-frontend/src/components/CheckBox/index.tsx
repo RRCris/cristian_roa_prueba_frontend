@@ -8,6 +8,7 @@ interface PropsCheckBox {
   label?: string;
   children?: ReactNode;
   onChange?: ChangeEventHandler;
+  checked?: boolean;
 }
 export default function CheckBox(props: PropsCheckBox) {
   return (
@@ -18,6 +19,7 @@ export default function CheckBox(props: PropsCheckBox) {
         name={props.name}
         value={props.name}
         onChange={props.onChange}
+        checked={props.checked}
       />
       <i className="">
         <Icon icon="iconamoon:check-duotone" className="icon" />

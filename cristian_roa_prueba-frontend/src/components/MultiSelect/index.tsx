@@ -40,6 +40,7 @@ export default function MultiSelect(props: PropsMultiSelect) {
               key={key}
               name={op}
               onChange={handleFunction}
+              checked={select.includes(op)}
             />
           ))}
         </div>

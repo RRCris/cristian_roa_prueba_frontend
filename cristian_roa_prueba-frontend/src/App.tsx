@@ -4,7 +4,8 @@ import ButtonNav, { MS } from "@/components/ButtonNav";
 import Typografy from "@/components/Typografy";
 import CheckBox from "@/components/CheckBox";
 import RadioButton from "@/components/RadioButton";
-import MultiSelect from "./components/MultiSelect";
+import MultiSelect from "@/components/MultiSelect";
+import Field from "@/components/Field";
 const data: MS = [
   {
     onClick: () => {
@@ -73,6 +74,7 @@ function App() {
         <Typografy variant="CardTitle" color="#000">
           Hola
         </Typografy>
+        <Typografy variant="BodySubtitle">Hola</Typografy>
         <CheckBox
           name="autopista"
           label="Autopista"
@@ -84,6 +86,7 @@ function App() {
           <RadioButton label="JavaScript" name="lenguaje" value="javaScript" />
           <RadioButton label="C++" name="lenguaje" value="c++" />
         </div>
+        <Field title="Name" placeholder="Put your name here" />
       </div>
     </>
   );
