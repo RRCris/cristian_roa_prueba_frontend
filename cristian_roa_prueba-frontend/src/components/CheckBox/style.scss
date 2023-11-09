@@ -1,1 +1,43 @@
-.CheckBox {}
+@import "@/scss/globals.scss";
+
+.CheckBox {
+   appearance: none;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   user-select: none;
+
+   position: relative;
+   margin-bottom: 32px;
+   display: block;
+
+   padding-left: 32px;
+
+   & input {
+      visibility: hidden;
+      position: absolute;
+      right: 0;
+
+      &:checked + i {
+         background-color: $secondary;
+      }
+   }
+
+   & i {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 22px;
+      height: 22px;
+      background-color: $letter;
+      border-radius: 5px;
+      border: 1px solid $letter;
+
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+   }
+
+
+}

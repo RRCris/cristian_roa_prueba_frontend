@@ -1,7 +1,8 @@
 import "@/App.scss";
 import Button from "@/components/Button";
 import ButtonNav, { MS } from "@/components/ButtonNav";
-import Typografy from "./components/Typografy";
+import Typografy from "@/components/Typografy";
+import CheckBox from "@/components/CheckBox";
 const data: MS = [
   {
     onClick: () => {
@@ -65,6 +66,7 @@ function App() {
         <Typografy variant="CardTitle" color="#000">
           Hola
         </Typografy>
+        <CheckBox name="autopista" label="Autopista" />
       </div>
     </>
   );
