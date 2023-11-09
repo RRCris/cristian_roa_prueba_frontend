@@ -4,6 +4,7 @@ import ButtonNav, { MS } from "@/components/ButtonNav";
 import Typografy from "@/components/Typografy";
 import CheckBox from "@/components/CheckBox";
 import RadioButton from "@/components/RadioButton";
+import MultiSelect from "./components/MultiSelect";
 const data: MS = [
   {
     onClick: () => {
@@ -45,6 +46,11 @@ function App() {
   return (
     <>
       <div className="card">
+        <MultiSelect
+          data={["javascript", "Java", "C++", "kotlin"]}
+          title="Select"
+          onChange={(e) => console.log(e)}
+        />
         <Button>Go there...</Button>
         <Button iconPosition="left">Go there...</Button>
         <Button iconPosition="right">Go there...</Button>
