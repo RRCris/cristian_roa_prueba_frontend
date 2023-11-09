@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "@/App.scss";
 import Button from "@/components/Button";
 import ButtonNav, { MS } from "@/components/ButtonNav";
@@ -41,14 +40,9 @@ const data: MS = [
   },
 ];
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
         <Button>Go there...</Button>
         <Button iconPosition="left">Go there...</Button>
         <Button iconPosition="right">Go there...</Button>
@@ -66,6 +60,10 @@ function App() {
           fugit, cumque quibusdam molestias consequatur et veniam iusto eum iure
           itaque ipsum officia. Labore quas beatae nulla molestias repudiandae.
           Hic.
+        </Typografy>
+        <Typografy variant="CardTitle">Hola</Typografy>
+        <Typografy variant="CardTitle" color="#000">
+          Hola
         </Typografy>
       </div>
     </>
