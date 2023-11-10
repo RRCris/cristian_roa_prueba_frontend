@@ -1,3 +1,4 @@
+import { lg, md } from "@/responsive/mediaqueries";
 import styled from "styled-components";
 
 //desde aqui podemos agregar nuevas typografias o modificar las existentes
@@ -5,21 +6,45 @@ import styled from "styled-components";
 export const Typografies = {
   TitlePage: styled.h1`
     font-family: Roboto;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
-    font-size: 9rem;
+    font-size: 3.5rem;
+
+    ${md} {
+      font-weight: 300;
+      font-size: 6rem;
+    }
+
+    ${lg} {
+      font-size: 9rem;
+    }
   `,
   SubtitlePage: styled.h2`
     font-family: Roboto;
     font-weight: 700;
     font-style: normal;
-    font-size: 4rem;
+    font-size: 2.2rem;
+
+    ${md} {
+      font-size: 3.3rem;
+    }
+
+    ${lg} {
+      font-size: 4rem;
+    }
   `,
   BodyText: styled.p`
     font-family: Roboto;
-    font-weight: 200;
+    font-weight: 300;
     font-style: normal;
-    font-size: 1rem;
+    font-size: 1.5rem;
+
+    ${md} {
+      font-size: 1.6rem;
+    }
+    ${lg} {
+      font-size: 1.8rem;
+    }
   `,
   CardTitle: styled.h3`
     font-family: Roboto;

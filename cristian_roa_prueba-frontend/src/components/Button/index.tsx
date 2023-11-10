@@ -10,7 +10,7 @@ interface PropsButton {
 }
 //el objetivo de este componente es: renderizar todos los botones
 //y atravez de props sencillas personalizar la apariencia
-export default function index(props: PropsButton) {
+export default function Button(props: PropsButton) {
   return (
     <button
       className="Button"
