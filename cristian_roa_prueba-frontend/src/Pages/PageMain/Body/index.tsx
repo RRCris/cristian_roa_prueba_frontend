@@ -13,6 +13,10 @@ export default function Body() {
   return (
     <div className="Body">
       <Card {...data} />
+      <Card {...data} />
+      <Card {...data} />
+      <Card {...data} />
+      <Card {...data} />
     </div>
   );
 }
