@@ -6,7 +6,6 @@ import Body from "./Body";
 export default function PageMain() {
   return (
     <div className="PageMain">
-      PageMain
       <Header />
       <Body />
     </div>

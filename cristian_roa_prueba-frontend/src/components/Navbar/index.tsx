@@ -43,10 +43,10 @@ const data: MS = [
 export default function Navbar() {
   return (
     <nav className="Navbar">
-      <ButtonNav>Home</ButtonNav>
+      <ButtonNav onClick={() => console.log("Home")}>Home</ButtonNav>
       <ButtonNav data={data}>Page</ButtonNav>
-      <ButtonNav>About</ButtonNav>
-      <ButtonNav>Contact</ButtonNav>
+      <ButtonNav onClick={() => console.log("About")}>About</ButtonNav>
+      <ButtonNav onClick={() => console.log("Contact")}>Contact</ButtonNav>
     </nav>
   );
 }
