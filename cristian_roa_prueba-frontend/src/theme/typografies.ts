@@ -50,7 +50,7 @@ export const Typografies = {
     font-family: Roboto;
     font-weight: 600;
     font-style: normal;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   `,
   BodySubtitle: styled.h5`
     font-family: Roboto;
