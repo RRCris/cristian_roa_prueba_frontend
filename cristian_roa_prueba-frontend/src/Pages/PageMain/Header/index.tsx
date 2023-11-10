@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.scss";
 import Image from "@/components/Image";
+import Loader from "@/components/Loader";
 interface PropsHeader {
   title?: string;
   subtitle?: string;
@@ -8,7 +9,7 @@ interface PropsHeader {
   images?: string[];
 }
 export default function Header(props: PropsHeader) {
-  if (!props.title) return <h1>load...</h1>;
+  if (!props.title) return <Loader />;
   return (
     <div className="Header">
       <div className="containerImages">
