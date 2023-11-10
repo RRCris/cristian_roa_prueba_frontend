@@ -12,11 +12,11 @@ export const Typografies = {
 
     ${md} {
       font-weight: 300;
-      font-size: 6rem;
+      font-size: 5.5rem;
     }
 
     ${lg} {
-      font-size: 9rem;
+      font-size: 6rem;
     }
   `,
   SubtitlePage: styled.h2`
@@ -30,7 +30,7 @@ export const Typografies = {
     }
 
     ${lg} {
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
   `,
   BodyText: styled.p`
