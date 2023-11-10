@@ -23,16 +23,19 @@ const settings = {
 export default function Body() {
   return (
     <div className="Body">
+      <div className="contentTitle">
+        <Typografy variant="TitlePage" color="#000">
+          Series Estelares
+        </Typografy>
+      </div>
       <div className="carrucel">
-        <div className="carrucel1">
-          <Slider {...settings}>
-            <Card {...data} />
-            <Card {...data} />
-            <Card {...data} />
-            <Card {...data} />
-            <Card {...data} />
-          </Slider>
-        </div>
+        <Slider {...settings}>
+          <Card {...data} />
+          <Card {...data} />
+          <Card {...data} />
+          <Card {...data} />
+          <Card {...data} />
+        </Slider>
       </div>
       <div className="contentTitle">
         <Typografy variant="SubtitlePage" color="#000">
