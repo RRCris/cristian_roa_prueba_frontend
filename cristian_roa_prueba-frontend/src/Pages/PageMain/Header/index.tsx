@@ -2,7 +2,7 @@ import Button from "@/components/Button";
 import "./style.scss";
 import Loader from "@/components/Loader";
 import Typografy from "@/components/Typografy";
-import Image from "@/components/Image";
+
 interface PropsHeader {
   title?: string;
   subtitle?: string;
@@ -16,8 +16,8 @@ export default function Header(props: PropsHeader) {
       <div className="containerImages">
         {props.images &&
           props.images.map((img, key) => (
-            <div className={"image" + key}>
-              <img key={key} src={img} alt="imagen de portada" />
+            <div className={"image" + key} key={key}>
+              <img src={img} alt="imagen de portada" />
             </div>
           ))}
       </div>

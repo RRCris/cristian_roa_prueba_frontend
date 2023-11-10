@@ -6,7 +6,7 @@ interface PropsField {
   title?: string;
   name?: string;
   placeholder?: string;
-  onChange?: ChangeEventHandler;
+  onChange?: ChangeEventHandler<HTMLInputElement>;
   value?: string;
 }
 export default function Field(props: PropsField) {

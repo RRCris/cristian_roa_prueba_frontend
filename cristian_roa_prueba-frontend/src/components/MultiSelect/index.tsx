@@ -6,17 +6,17 @@ import CheckBox from "../CheckBox";
 interface PropsMultiSelect {
   title?: string;
   data: string[];
-  onChange?(select: string[]): void;
+  onChange?(e: { target: { value: string[] } }): void;
 }
 export default function MultiSelect(props: PropsMultiSelect) {
   const [open, SetOpen] = useState(false);
   const [select, SetSelect] = useState<string[]>([]);
 
   useEffect(() => {
-    props.onChange && props.onChange(select);
+    props.onChange && props.onChange({ target: { value: select } });
   }, [select]);
 
-  const handleFunction: ChangeEventHandler = (e) => {
+  const handleFunction: ChangeEventHandler<HTMLInputElement> = (e) => {
     if (e.target.checked) SetSelect([...select, e.target.value]);
     else SetSelect(select.filter((op) => op != e.target.value));
   };

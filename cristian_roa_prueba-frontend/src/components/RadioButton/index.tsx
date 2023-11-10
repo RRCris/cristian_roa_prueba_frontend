@@ -6,7 +6,7 @@ interface PropsRadioButton {
   label?: string;
   name?: string;
   value?: string;
-  onChange?: ChangeEventHandler;
+  onChange?: ChangeEventHandler<HTMLInputElement>;
 }
 export default function RadioButton(props: PropsRadioButton) {
   return (
