@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { FormEventHandler, useState } from "react";
 import "./style.scss";
 import MultiSelect from "@/components/MultiSelect";
 import RadioButton from "@/components/RadioButton";
@@ -20,12 +20,17 @@ export default function Form() {
     };
   };
 
+  const handleSubmit: FormEventHandler<HTMLFormElement> = (e) => {
+    e.preventDefault();
+    console.log(values);
+  };
+
   const plataformas = values.plataformas?.length
     ? values.plataformas.map((e: string) => " " + e)
     : "Todos nuestros servicios";
 
   return (
-    <form className="Form">
+    <form className="Form" onSubmit={handleSubmit}>
       <div className="containerPartForm">
         <MultiSelect
           title="Select"
