@@ -1,7 +1,7 @@
 @import '@/scss/globals.scss';
 
 .Card {
-   width: 300px;
+   min-width: 300px;
    border-radius: 30px;
    overflow: hidden;
    background-color: $secondary;
@@ -10,12 +10,12 @@
    -moz-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.41);
 
    @media only screen and (min-width: $md) {
-      width: 400px;
+      min-width: 400px;
 
    }
 
    @media only screen and (min-width: $lg) {
-      width: 450px;
+      min-width: 450px;
 
    }
 

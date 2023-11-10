@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.scss";
 import Card from "@/Pages/PageMain/Body/Card";
+import Form from "@/Pages/PageMain/Body/Form";
 
 const data = {
   image: "https://starsmydestination.files.wordpress.com/2023/10/image-47.png",
@@ -12,11 +13,14 @@ const data = {
 export default function Body() {
   return (
     <div className="Body">
-      <Card {...data} />
-      <Card {...data} />
-      <Card {...data} />
-      <Card {...data} />
-      <Card {...data} />
+      <div className="carrucel">
+        <Card {...data} />
+        <Card {...data} />
+        <Card {...data} />
+        <Card {...data} />
+        <Card {...data} />
+      </div>
+      <Form />
     </div>
   );
 }

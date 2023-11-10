@@ -1,8 +1,7 @@
 .App {
-  background: rgb(12, 23, 38);
-  background: -moz-linear-gradient(180deg, rgba(12, 23, 38, 1) 0%, rgba(60, 89, 115, 1) 35%, rgba(163, 62, 121, 1) 100%);
-  background: -webkit-linear-gradient(180deg, rgba(12, 23, 38, 1) 0%, rgba(60, 89, 115, 1) 35%, rgba(163, 62, 121, 1) 100%);
-  background: linear-gradient(180deg, rgba(12, 23, 38, 1) 0%, rgba(60, 89, 115, 1) 35%, rgba(163, 62, 121, 1) 100%);
-  filter: progid:DXImageTransform.Mcrosoft.gradient(startColorstr="#0c1726", endColorstr="#a33e79", GradientType=1);
-
+  background: rgb(68, 13, 67);
+  background: -moz-linear-gradient(180deg, rgba(68, 13, 67, 1) 0%, rgba(12, 23, 38, 1) 5%, rgba(60, 89, 115, 1) 75%);
+  background: -webkit-linear-gradient(180deg, rgba(68, 13, 67, 1) 0%, rgba(12, 23, 38, 1) 5%, rgba(60, 89, 115, 1) 75%);
+  background: linear-gradient(180deg, rgba(68, 13, 67, 1) 0%, rgba(12, 23, 38, 1) 5%, rgba(60, 89, 115, 1) 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#440d43", endColorstr="#3c5973", GradientType=1);
 }

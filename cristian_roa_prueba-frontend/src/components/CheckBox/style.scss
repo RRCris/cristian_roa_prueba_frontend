@@ -10,7 +10,10 @@
    margin-bottom: 20px;
    display: block;
 
-   padding-left: 32px;
+   padding-left: 39px;
+
+
+
 
    & input {
       visibility: hidden;
@@ -25,7 +28,7 @@
    & i {
       position: absolute;
       left: 0;
-      top: 0;
+      top: 10px;
       width: 22px;
       height: 22px;
       background-color: $letter;

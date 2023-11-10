@@ -7,9 +7,9 @@
    user-select: none;
 
    position: relative;
-   padding-left: 80px;
+   padding-left: 60px;
    display: block;
-   margin-bottom: 30px;
+   margin-bottom: 25px;
 
    & input {
       visibility: hidden;
@@ -23,7 +23,7 @@
 
    & i {
       position: absolute;
-      top: 0;
+      top: 9px;
       left: 0;
       height: 21px;
       width: 21px;

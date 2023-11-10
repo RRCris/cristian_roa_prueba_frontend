@@ -1,3 +1,10 @@
 .Body {
-   background-color: green;
+   background-color: #aaa;
+
+   .carrucel {
+      display: flex;
+      gap: 50px;
+      overflow: scroll;
+   }
+
 }
