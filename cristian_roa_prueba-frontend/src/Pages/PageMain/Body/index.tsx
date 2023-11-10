@@ -2,6 +2,7 @@ import React from "react";
 import "./style.scss";
 import Card from "@/Pages/PageMain/Body/Card";
 import Form from "@/Pages/PageMain/Body/Form";
+import Typografy from "@/components/Typografy";
 
 const data = {
   image: "https://starsmydestination.files.wordpress.com/2023/10/image-47.png",
@@ -19,6 +20,11 @@ export default function Body() {
         <Card {...data} />
         <Card {...data} />
         <Card {...data} />
+      </div>
+      <div className="contentTitle">
+        <Typografy variant="SubtitlePage" color="#000">
+          Tus Datos
+        </Typografy>
       </div>
       <Form />
     </div>
