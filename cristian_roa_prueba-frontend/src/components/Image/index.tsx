@@ -8,6 +8,7 @@ interface PropsImage {
   alt: string;
   width?: number;
   height?: number;
+  className?: string;
 }
 export default function Image(props: PropsImage) {
   return (
@@ -18,6 +19,7 @@ export default function Image(props: PropsImage) {
       height={props.height}
       effect="blur"
       placeholderSrc={placeHolderImage}
+      className={props.className}
     />
   );
 }

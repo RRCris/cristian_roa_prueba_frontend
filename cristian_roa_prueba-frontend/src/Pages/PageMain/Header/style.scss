@@ -1,1 +1,117 @@
-.Header {}
+.Header {
+   .containerImages {
+      width: 400px;
+      height: 600px;
+      position: relative;
+      overflow: hidden;
+
+
+
+
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: fill;
+
+
+      }
+
+      .image0 {
+         position: absolute;
+         top: 0;
+         left: 0;
+         z-index: 1;
+         animation: image0 12s infinite;
+      }
+
+      .image1 {
+         animation: image1 12s infinite;
+         position: absolute;
+         top: 0;
+         left: 0;
+         z-index: 1;
+      }
+
+      .image2 {
+         animation: image2 12s infinite;
+         position: absolute;
+         top: 0;
+         left: 0;
+         z-index: 1;
+      }
+   }
+}
+
+@keyframes image0 {
+   0% {
+      transform: translate(0, 0);
+   }
+
+   28% {
+      transform: translate(0, 0);
+   }
+
+   33% {
+      transform: translate(0, 600px);
+   }
+
+   95% {
+      transform: translate(0, 600px);
+   }
+
+   100% {
+      transform: translate(0, 0);
+   }
+
+}
+
+@keyframes image1 {
+   0% {
+      transform: translate(0, -600px);
+   }
+
+   28% {
+      transform: translate(0, -600px);
+   }
+
+   33% {
+      transform: translate(0, 0);
+   }
+
+   61% {
+      transform: translate(0, 0);
+   }
+
+   66% {
+      transform: translate(400px, 0);
+   }
+
+   100% {
+      transform: translate(400px, 0);
+   }
+
+}
+
+@keyframes image2 {
+   0% {
+      transform: translate(-400px, 0);
+   }
+
+   61% {
+      transform: translate(-400px, 0);
+   }
+
+   66% {
+      transform: translate(0, 0);
+   }
+
+   95% {
+      transform: translate(0, 0);
+   }
+
+   100% {
+      transform: translate(0, -600px);
+   }
+
+
+}

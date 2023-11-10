@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.scss";
 import Image from "@/components/Image";
 import Loader from "@/components/Loader";
@@ -13,10 +12,12 @@ export default function Header(props: PropsHeader) {
   return (
     <div className="Header">
       <div className="containerImages">
-        <Image
-          src={props.images ? props.images[0] : ""}
-          alt="imagen de portada"
-        />
+        {props.images &&
+          props.images.map((img, key) => (
+            <div className={"image" + key}>
+              <img key={key} src={img} alt="imagen de portada" />
+            </div>
+          ))}
       </div>
     </div>
   );

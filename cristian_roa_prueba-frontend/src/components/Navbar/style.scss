@@ -6,7 +6,8 @@
    flex-direction: row;
    justify-content: space-around;
    position: sticky;
-   top: 0;
+   z-index: 10;
+   top: 1rem;
    left: 0;
    width: 100%;
    border-bottom-right-radius: 20px;
