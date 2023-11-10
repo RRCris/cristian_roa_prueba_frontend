@@ -17,7 +17,7 @@ export default function Header(props: PropsHeader) {
         {props.images &&
           props.images.map((img, key) => (
             <div className={"image" + key}>
-              <Image key={key} src={img} alt="imagen de portada" />
+              <img key={key} src={img} alt="imagen de portada" />
             </div>
           ))}
       </div>

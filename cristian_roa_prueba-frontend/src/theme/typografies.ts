@@ -63,7 +63,24 @@ export const Typografies = {
     font-family: Roboto;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.1rem;
+    font-size: 1.6rem;
+
+    ${lg} {
+      font-size: 2rem;
+    }
+  `,
+  CaptionText: styled.p`
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+
+    ${md} {
+      font-size: 1.1rem;
+    }
+    ${lg} {
+      font-size: 1.3rem;
+    }
   `,
 };
 

@@ -1,0 +1,25 @@
+@import "@/scss/globals.scss";
+
+.Footer {
+   background-color: $main;
+
+   .containerColumns {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 30px;
+      text-align: center;
+      padding-bottom: 30px;
+      padding-top: 40px;
+
+      @media only screen and (min-width:$lg) {
+         flex-direction: row;
+      }
+   }
+
+   .caption {
+      text-align: center;
+      margin-bottom: 100px;
+   }
+}

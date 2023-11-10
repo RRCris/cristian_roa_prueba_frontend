@@ -2,6 +2,7 @@ import React from "react";
 import "./style.scss";
 import Header from "./Header";
 import Body from "./Body";
+import Footer from "./Footer";
 
 const data = {
   title: "titulo pelicula",
@@ -19,6 +20,7 @@ export default function PageMain() {
     <div className="PageMain">
       <Header {...data} />
       <Body />
+      <Footer />
     </div>
   );
 }
