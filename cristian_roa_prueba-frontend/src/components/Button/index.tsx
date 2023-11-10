@@ -26,6 +26,7 @@ export default function Button(props: PropsButton) {
             width={22}
             height={22}
             color="#FFF"
+            className="animation"
           />
         )}
         {props.children}
@@ -35,6 +36,7 @@ export default function Button(props: PropsButton) {
             width={22}
             height={22}
             color="#FFF"
+            className="animation"
           />
         )}
       </div>

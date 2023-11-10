@@ -27,15 +27,49 @@
    }
 
 
+
    .container {
       display: flex;
       justify-content: center;
       align-items: center;
       min-width: 150px;
+
+
+
+
+
    }
 
    .sb {
       justify-content: space-between;
+   }
+
+   &:hover .container .animation {
+      animation: animate .6s infinite ease;
+   }
+
+   $largeAnimate: 5%;
+
+   @keyframes animate {
+      0% {
+         transform: translateX(0%);
+      }
+
+      25% {
+         transform: translateX($largeAnimate);
+      }
+
+      50% {
+         transform: translateX(0%);
+      }
+
+      75% {
+         transform: translateX(-$largeAnimate);
+      }
+
+      100% {
+         transform: translateX(0%);
+      }
    }
 
 }

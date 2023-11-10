@@ -20,10 +20,10 @@ export default function Form() {
     };
   };
 
-  const plataformas = values.plataformas.length
+  const plataformas = values.plataformas?.length
     ? values.plataformas.map((e: string) => " " + e)
     : "Todos nuestros servicios";
-  console.log(plataformas);
+
   return (
     <form className="Form">
       <div className="containerPartForm">
