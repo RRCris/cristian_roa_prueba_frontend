@@ -7,6 +7,7 @@ interface PropsField {
   name?: string;
   placeholder?: string;
   onChange?: ChangeEventHandler;
+  value?: string;
 }
 export default function Field(props: PropsField) {
   return (
@@ -17,6 +18,7 @@ export default function Field(props: PropsField) {
         name={props.name}
         onChange={props.onChange}
         placeholder={props.placeholder}
+        value={props.value}
       />
     </label>
   );

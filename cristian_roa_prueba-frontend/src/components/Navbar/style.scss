@@ -1,0 +1,14 @@
+@import "@/scss/globals.scss";
+
+.Navbar {
+   background-color: $main;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   position: sticky;
+   top: 0;
+   left: 0;
+   width: 70%;
+   border-bottom-right-radius: 20px;
+
+}

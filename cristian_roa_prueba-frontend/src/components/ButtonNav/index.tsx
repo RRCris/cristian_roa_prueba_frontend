@@ -31,6 +31,7 @@ export default function ButtonNav(props: PropsButtonNav) {
       <button className="but" onClick={handleClick}>
         {props.children}
       </button>
+
       <MenuSelect show={show} data={props.data} />
     </div>
   );
