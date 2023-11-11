@@ -1,12 +1,13 @@
 # Prueba Tecnica
 
-- Nota: Se utilizo la rama "main" para el deploy (pero todo el desarrollo se realizo en "develop" como evidencian los commits de dicha rama)
+- **Nota:** Se utilizo la rama "main" para el deploy (pero todo el desarrollo se realizo en "develop" como evidencian los commits de dicha rama)
+- **Nota:** la aparente carga al inicio es falsa en realidad todo esta cargo y listo(es para aparentar como se veria conectada a una Api real)
 
-> **Prueba en vivo del Proyecto** : https://654f0b764389ab6b460f589d--dynamic-pony-a74acc.netlify.app/
+> **Prueba en vivo del Proyecto** : https://dynamic-pony-a74acc.netlify.app/
 
 ### Puntos de Valor del proyecto
 
-1. [deploy realizado(Netlify)](https://654f0b764389ab6b460f589d--dynamic-pony-a74acc.netlify.app/)
+1. [deploy realizado(Netlify)](https://dynamic-pony-a74acc.netlify.app/)
 2. No se integro la libreria Props-Types, por que el proyecto esta escrito en **TypeScript** y esto es mucho mejor.
 3. **Desarrollo Asincronico**: la aplicacion esta totalmente lista para comunicarse con una APi rest.
 4. El proyecto cuenta con un banner que avisara en cuanto **NO HAY INTERNET**
