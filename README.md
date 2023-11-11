@@ -1,27 +1,28 @@
-# React + TypeScript + Vite
+# Prueba Tecnica
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Nota: Se utilizo la rama "main" para el deploy (pero todo el desarrollo se realizo en "develop" como evidencian los commits de dicha rama)
 
-Currently, two official plugins are available:
+> **Prueba en vivo del Proyecto** : https://654f0b764389ab6b460f589d--dynamic-pony-a74acc.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Puntos de Valor del proyecto
 
-## Expanding the ESLint configuration
+1. [deploy realizado(Netlify)](https://654f0b764389ab6b460f589d--dynamic-pony-a74acc.netlify.app/)
+2. No se integro la libreria Props-Types, por que el proyecto esta escrito en **TypeScript** y esto es mucho mejor.
+3. **Desarrollo Asincronico**: la aplicacion esta totalmente lista para comunicarse con una APi rest.
+4. El proyecto cuenta con un banner que avisara en cuanto **NO HAY INTERNET**
+5. las cards llevan al trailer de la pelicula que indica
+6. totalmente responsive desarrolada atra vez de la metodologia **MOBILE FIRST**
+7. se utilizo **SASS** como preprocesador de CSS
+8. Sin librerias de CSS solo codigo puro y duro😎
+9. el codigo compila sin errores ni warnings
+10. Se utilizo **inyecto la fuente ROBOTO directamente** y no atravez de CDN(esto mejora el performance y la independencia del proyecto).
+11. Se respeto la gama de colores inicial y se añadieron unos más para dar mas vida al proyecto
+12. se utilizo responsively App para la verificacion del diseño responsivo
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## no siendo más...
 
-- Configure the top-level `parserOptions` property like this:
+# Disfruta de mi proyecto
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+![Tech Stack](/TechStack.png)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+---

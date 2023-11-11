@@ -30,7 +30,14 @@ export default function Footer() {
       <div className="caption">
         <Typografy variant="CaptionText">
           Este es un boiler plate diseñado y desarrollado por{" "}
-          <a href="https://www.linkedin.com/in/devcris2023/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/devcris2023/"
+            target="_blank"
+            onClick={(e) => {
+              e.preventDefault();
+              console.log("footer link");
+            }}
+          >
             Cristian Roa
           </a>{" "}
           cualquier plaguio esta prohibido

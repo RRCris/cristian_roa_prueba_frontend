@@ -36,8 +36,12 @@ export default function Header(props: PropsHeader) {
         <Typografy variant="BodyText" animate="drop-left" delay={1000}>
           {props.description}
         </Typografy>
-        <Button icon="icon-park-solid:play" iconPosition="right">
-          Go there...
+        <Button
+          icon="icon-park-solid:play"
+          iconPosition="right"
+          onClick={() => console.log("Go There")}
+        >
+          Go There...
         </Button>
       </main>
     </header>

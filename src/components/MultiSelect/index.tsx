@@ -14,7 +14,7 @@ export default function MultiSelect(props: PropsMultiSelect) {
 
   useEffect(() => {
     props.onChange && props.onChange({ target: { value: select } });
-  }, [props, select]);
+  }, [select]);
 
   const handleFunction: ChangeEventHandler<HTMLInputElement> = (e) => {
     if (e.target.checked) SetSelect([...select, e.target.value]);
