@@ -28,7 +28,7 @@ export default function ButtonNav(props: PropsButtonNav) {
   };
   return (
     <div className="ButtonNav">
-      <button className="but" onClick={handleClick}>
+      <button className="but" onClick={handleClick} style={{ color: "#FFF" }}>
         {props.children}
       </button>
 
