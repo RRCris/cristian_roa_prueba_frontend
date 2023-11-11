@@ -7,33 +7,34 @@ export default function Footer() {
       <div className="containerColumns">
         <div>
           <Typografy variant="BodySubtitle">
-            Es libre de utilizar la Build
+            Todo lo dicho en esta pagina
           </Typografy>
           <Typografy variant="BodyText">
-            Es libre de utilizar la Build
+            es de ejemplifacion y no existe
           </Typografy>
         </div>
         <div>
           <Typografy variant="BodySubtitle">
-            Es libre de utilizar la Build
+            Esta pagina fue hecha con amor
           </Typografy>
           <Typografy variant="BodyText">
-            Es libre de utilizar la Build
+            Sientase libre de disfrutarla
           </Typografy>
         </div>
         <div>
           <Typografy variant="BodySubtitle">
-            Es libre de utilizar la Build
+            Diseño y Colorizacion adaptados
           </Typografy>
-          <Typografy variant="BodyText">
-            Es libre de utilizar la Build
-          </Typografy>
+          <Typografy variant="BodyText">por cristian david roa</Typografy>
         </div>
       </div>
       <div className="caption">
         <Typografy variant="CaptionText">
-          La prueba deberá desarrollarse en React. Es libre de utilizar la Build
-          Tool de su preferencia.
+          Este es un boiler plate diseñado y desarrollado por{" "}
+          <a href="https://www.linkedin.com/in/devcris2023/" target="_blank">
+            Cristian Roa
+          </a>{" "}
+          cualquier plaguio esta prohibido
         </Typografy>
       </div>
     </div>

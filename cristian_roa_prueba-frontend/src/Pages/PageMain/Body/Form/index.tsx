@@ -4,6 +4,7 @@ import MultiSelect from "@/components/MultiSelect";
 import RadioButton from "@/components/RadioButton";
 import Field from "@/components/Field";
 import Button from "@/components/Button";
+import Typografy from "@/components/Typografy";
 
 export default function Form() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -32,20 +33,22 @@ export default function Form() {
   return (
     <form className="Form" onSubmit={handleSubmit}>
       <div className="containerPartForm">
+        <Typografy variant="BodyText">Plataformas que te interesan :</Typografy>
         <MultiSelect
           title="Select"
-          data={["Option 1", "Option 2", "Option 3", "Option 4"]}
+          data={["Netflix", "HBO+", "Star+", "Disney+", "Paramount+"]}
           {...asignation("plataformas")}
         />
         <br />
       </div>
       <div className="containerPartForm" {...asignation("pais")}>
+        <Typografy variant="BodyText">Pais en el que vives :</Typografy>
         <div className="bgcolor">
-          <RadioButton label="Option 1" name="Radio" value="option 1" />
-          <RadioButton label="Option 2" name="Radio" value="option 2" />
-          <RadioButton label="Option 3" name="Radio" value="option 3" />
-          <RadioButton label="Option 4" name="Radio" value="option 4" />
-          <RadioButton label="Clear Radios" name="Radio" value="" />
+          <RadioButton label="Colombia" name="Radio" value="Colombia" />
+          <RadioButton label="Argentina" name="Radio" value="Argentina" />
+          <RadioButton label="Mexico" name="Radio" value="Mexico" />
+          <RadioButton label="Ecuador" name="Radio" value="Ecuador" />
+          <RadioButton label="Panamá" name="Radio" value="Panamá" />
         </div>
       </div>
       <div className="containerPartForm">

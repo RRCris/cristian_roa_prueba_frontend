@@ -34,7 +34,7 @@ export default function Body() {
       </div>
       <div className="carrucel">
         <Slider {...settings}>
-          {value.series.map((card: any, key: number) => (
+          {value?.series?.map((card: any, key: number) => (
             <Card {...card} key={key} />
           ))}
         </Slider>
