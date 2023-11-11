@@ -4,7 +4,7 @@ import { DataBannerInfo, DataMainSeries } from "@/mock/pelis";
 //y si algo esta mal puedes tirar error
 export function ServiceGetBannerInfo() {
   return new Promise((res) => {
-    setTimeout(() => res(DataBannerInfo), 3000 + Math.random() * 3000);
+    setTimeout(() => res(DataBannerInfo), 1000 + Math.random() * 3000);
   });
 }
 
