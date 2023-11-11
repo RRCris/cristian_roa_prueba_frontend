@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "serve build -s -n -L -p $PORT",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "serve build -s -n"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -15,6 +16,7 @@
     "react-lazy-load-image-component": "^1.6.0",
     "react-slick": "^0.29.0",
     "sass": "^1.69.5",
+    "serve": "^14.2.1",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.1"
   },

@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.scss";
 import Card from "@/Pages/PageMain/Body/Card";
 import Form from "@/Pages/PageMain/Body/Form";
@@ -34,9 +33,12 @@ export default function Body() {
       </div>
       <div className="carrucel">
         <Slider {...settings}>
-          {value?.series?.map((card: any, key: number) => (
-            <Card {...card} key={key} />
-          ))}
+          {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            value?.series?.map((card: any, key: number) => (
+              <Card {...card} key={key} />
+            ))
+          }
         </Slider>
       </div>
       <div className="contentTitle">

@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import { Typografies, Variants } from "@/theme/typografies";
 import "./style.scss";
 

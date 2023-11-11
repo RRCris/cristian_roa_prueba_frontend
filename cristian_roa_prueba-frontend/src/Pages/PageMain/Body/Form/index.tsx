@@ -1,4 +1,4 @@
-import React, { FormEventHandler, useState } from "react";
+import { FormEventHandler, useState } from "react";
 import "./style.scss";
 import MultiSelect from "@/components/MultiSelect";
 import RadioButton from "@/components/RadioButton";

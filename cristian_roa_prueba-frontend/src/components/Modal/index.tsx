@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.scss";
 import Typografy from "../Typografy";
 import { Icon } from "@iconify/react/dist/iconify.js";

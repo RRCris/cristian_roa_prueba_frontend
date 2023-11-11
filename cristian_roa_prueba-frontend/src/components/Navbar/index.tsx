@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.scss";
 import ButtonNav, { MS } from "@/components/ButtonNav";
 

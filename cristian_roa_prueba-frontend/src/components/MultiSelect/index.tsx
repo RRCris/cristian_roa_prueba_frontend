@@ -1,4 +1,4 @@
-import React, { useState, ChangeEventHandler, useEffect } from "react";
+import { useState, ChangeEventHandler, useEffect } from "react";
 import "./style.scss";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import CheckBox from "../CheckBox";
@@ -14,7 +14,7 @@ export default function MultiSelect(props: PropsMultiSelect) {
 
   useEffect(() => {
     props.onChange && props.onChange({ target: { value: select } });
-  }, [select]);
+  }, [props, select]);
 
   const handleFunction: ChangeEventHandler<HTMLInputElement> = (e) => {
     if (e.target.checked) SetSelect([...select, e.target.value]);
