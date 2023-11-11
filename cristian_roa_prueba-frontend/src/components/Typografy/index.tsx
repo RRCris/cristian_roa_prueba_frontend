@@ -14,9 +14,11 @@ export default function Typografy(props: PropsTypografy) {
   return (
     <Vr
       style={{
+        opacity: props.animate ? 0 : 1,
         color: props.color,
-        animation: props.animate + " 1s",
-        animationDelay: "" + props.delay,
+        animation: props.animate + " .8s",
+        animationDelay: props.delay + "ms",
+        animationFillMode: "forwards",
       }}
     >
       {props.children}

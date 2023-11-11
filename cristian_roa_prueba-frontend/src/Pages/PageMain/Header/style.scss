@@ -23,6 +23,7 @@
 
 
    .containerImages {
+      animation: fadeIn 1.5s;
       min-width: 400px;
       height: 600px;
       position: relative;
@@ -91,6 +92,16 @@
 
       }
 
+   }
+}
+
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
    }
 }
 

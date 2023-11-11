@@ -27,9 +27,15 @@ export default function Header(props: PropsHeader) {
           ))}
       </div>
       <main className="containerText">
-        <Typografy variant="TitlePage">{props.title}</Typografy>
-        <Typografy variant="SubtitlePage">{props.subtitle}</Typografy>
-        <Typografy variant="BodyText">{props.description}</Typografy>
+        <Typografy variant="TitlePage" animate="drop-left" delay={100}>
+          {props.title}
+        </Typografy>
+        <Typografy variant="SubtitlePage" animate="drop-left" delay={600}>
+          {props.subtitle}
+        </Typografy>
+        <Typografy variant="BodyText" animate="drop-left" delay={1000}>
+          {props.description}
+        </Typografy>
         <Button icon="icon-park-solid:play" iconPosition="right">
           Go there...
         </Button>
