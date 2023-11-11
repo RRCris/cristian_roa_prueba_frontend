@@ -10,7 +10,12 @@ interface PropsHeader {
   images?: string[];
 }
 export default function Header(props: PropsHeader) {
-  if (!props.title) return <Loader />;
+  if (!props.title)
+    return (
+      <div className="skeleton">
+        <Loader />
+      </div>
+    );
   return (
     <header className="Header">
       <div className="containerImages">

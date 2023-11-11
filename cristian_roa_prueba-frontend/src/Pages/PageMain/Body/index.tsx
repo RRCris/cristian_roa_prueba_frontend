@@ -4,14 +4,9 @@ import Card from "@/Pages/PageMain/Body/Card";
 import Form from "@/Pages/PageMain/Body/Form";
 import Typografy from "@/components/Typografy";
 import Slider from "react-slick";
-
-const data = {
-  image: "https://starsmydestination.files.wordpress.com/2023/10/image-47.png",
-  title: "Loki Season 2",
-  description:
-    "Los Lokis están maldecidos con un propósito glorioso, y lo volverán a estar en la temporada 2 de 'Loki' en Disney+",
-  trailer: "https://www.youtube.com/watch?v=DkskOhoQpuo",
-};
+import { useResponse } from "@/hooks/useResponse";
+import { ServiceGetMainSeries } from "@/services/movie";
+import Loader from "@/components/Loader";
 
 const settings = {
   dots: true,
@@ -21,6 +16,15 @@ const settings = {
   slidesToScroll: 1,
 };
 export default function Body() {
+  const { value, loading } = useResponse(ServiceGetMainSeries, true);
+  ///se podria mostrar banner o un mejor manejo de errores de haber más tiempo
+
+  if (loading)
+    return (
+      <div className="skeleton">
+        <Loader />
+      </div>
+    );
   return (
     <div className="Body">
       <div className="contentTitle">
@@ -30,16 +34,17 @@ export default function Body() {
       </div>
       <div className="carrucel">
         <Slider {...settings}>
-          <Card {...data} />
-          <Card {...data} />
-          <Card {...data} />
-          <Card {...data} />
-          <Card {...data} />
+          {value.series.map((card: any, key: number) => (
+            <Card {...card} key={key} />
+          ))}
         </Slider>
       </div>
       <div className="contentTitle">
         <Typografy variant="SubtitlePage" color="#000">
-          Tus Datos
+          Deja Tus Datos👇
+        </Typografy>
+        <Typografy variant="BodySubtitle" color="#000">
+          Para recibir más información
         </Typografy>
       </div>
       <Form />

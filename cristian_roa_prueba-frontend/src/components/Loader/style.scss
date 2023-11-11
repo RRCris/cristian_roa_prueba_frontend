@@ -1,12 +1,11 @@
 @import "@/scss/globals.scss";
 
 .Loader {
-
+   width: 100%;
+   height: 100%;
    display: flex;
-   background-color: #FFF3;
    justify-content: center;
    align-items: center;
-   backdrop-filter: blur(5px);
    padding: 1rem 1rem;
 
    .loader1 {
