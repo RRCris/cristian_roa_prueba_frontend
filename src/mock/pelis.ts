@@ -64,13 +64,5 @@ export const DataMainSeries: ResponseMainSeries = {
         "Una serie de dibujos animados que no es para niños. De hecho, su objetivo parece ser el ofender",
       trailer: "https://www.youtube.com/watch?v=unS1El9GWmw",
     },
-    {
-      image:
-        "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg6lbKGPKRkjokFo8wrQrNBFGwxQr1joyFjt_GtWVF2uTnVcSB",
-      title: "South Park",
-      description:
-        "Una serie de dibujos animados que no es para niños. De hecho, su objetivo parece ser el ofender",
-      trailer: "https://www.youtube.com/watch?v=unS1El9GWmw",
-    },
   ],
 };
